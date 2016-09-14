@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Ebay Importer For India",
+  "description": "Redirects you to global purchase link of an ebay item for your country",
+  "version": "0.1",
+  "permissions": [
+    "*://www.ebay.com/*",
+    "*://ebay.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.ebay.com/*"
+      ],
+      "js": [
+        "jquery.js",
+        "global_import.js"
+      ]
+    }
+  ]
+}
